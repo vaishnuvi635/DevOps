@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arnav Rade | Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #12182b;
+      --accent: #6ee7b7;
+      --accent2: #7c7cff;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #12182b, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 4rem 2rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      color: var(--muted);
+      margin-top: 0.75rem;
+      font-size: 1.1rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(6px);
+    }
+
+    .card h2 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    .about p {
+      color: var(--text);
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill {
+      background: var(--card);
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--accent2);
+      font-weight: 500;
+    }
+
+    .projects .project {
+      margin-bottom: 1.25rem;
+    }
+
+    .projects h3 {
+      color: var(--accent2);
+      margin-bottom: 0.3rem;
+    }
+
+    .projects p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Arnav Rade</h1>
+    <p>Web Developer • IT Undergraduate • Project Builder</p>
+  </header>
+
+  <section>
+    <div class="card about">
+      <h2>About Me</h2>
+      <p>
+        I am an IT undergraduate and passionate web developer who enjoys building
+        impactful projects. My work ranges from community-based platforms and
+        placement management systems to AI-driven solutions and story-based games.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">HTML & CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Laravel</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">MongoDB</div>
+        <div class="skill">REST APIs</div>
+      </div>
+    </div>
+
+    <div class="card projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Placement Management System</h3>
+        <p>
+          A full-stack system with admin dashboards, bulk user creation, CSV-based
+          student upload, sorting, and analytics.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Food Waste Reduction Platform</h3>
+        <p>
+          Connects vendors with NGOs to donate leftover food using AI-based quality
+          checks.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>AI Story-Based Game</h3>
+        <p>
+          A mytho-futuristic horror game concept blending AI, storytelling, and
+          immersive gameplay.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:arnavrade@example.com">arnavrade@example.com</a></p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/arnavrade</a></p>
+      <p>GitHub: <a href="#">github.com/arnavrade</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Arnav Rade • Built with dark aesthetics
+  </footer>
+
+</body>
+</html>
